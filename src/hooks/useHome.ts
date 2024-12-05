@@ -188,7 +188,18 @@ export default function () {
           rotationX: 0,
         },
         {
-          rotationX: 720,
+          rotationX: 540,
+          duration: 1,
+          delay: 3,
+        }
+      )
+      .fromTo(
+        ".i2",
+        {
+          rotationX: 540,
+        },
+        {
+          rotationX: 0,
           duration: 1,
           delay: 3,
         }
