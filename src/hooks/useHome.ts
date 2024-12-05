@@ -74,8 +74,11 @@ export default function () {
       .to(".n", {
         //翻转
       })
-      .to(
+      .fromTo(
         ".logo-img2",
+        {
+          x: -220,
+        },
         {
           x: 220,
           y: -40,
@@ -196,7 +199,7 @@ export default function () {
       { scale: 0, rotateY: 0 },
       { scale: 1, rotateY: 360, duration: 1, delay: 3 }
     )
-      .fromTo(".t2-svg", { scale: 0 }, { scale: 1, duration: 0.3}, "<")
+      .fromTo(".t2-svg", { scale: 0 }, { scale: 1, duration: 0.3 }, "<")
       .fromTo(
         ".h2",
         {
