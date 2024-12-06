@@ -15,13 +15,15 @@ import Main from "./components/Main.vue";
 <style scoped>
 .title {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 200px;
+  border-bottom: 1px solid rgba(228, 228, 228, 0.5);;
 }
 .main {
   width: 100%;
+  overflow-x: scroll;
   min-height: 100vh;
 }
 </style>

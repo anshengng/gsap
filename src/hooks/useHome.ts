@@ -272,7 +272,7 @@ export default function () {
             );
         },
       },
-      "-=6"
+      "-=10"
     );
   };
   return {
