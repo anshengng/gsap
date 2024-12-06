@@ -74,8 +74,11 @@ export default function () {
       .to(".n", {
         //翻转
       })
-      .to(
+      .fromTo(
         ".logo-img2",
+        {
+          x: -220,
+        },
         {
           x: 220,
           y: -40,
@@ -185,7 +188,18 @@ export default function () {
           rotationX: 0,
         },
         {
-          rotationX: 720,
+          rotationX: 540,
+          duration: 1,
+          delay: 3,
+        }
+      )
+      .fromTo(
+        ".i2",
+        {
+          rotationX: 540,
+        },
+        {
+          rotationX: 0,
           duration: 1,
           delay: 3,
         }
@@ -196,7 +210,7 @@ export default function () {
       { scale: 0, rotateY: 0 },
       { scale: 1, rotateY: 360, duration: 1, delay: 3 }
     )
-      .fromTo(".t2-svg", { scale: 0 }, { scale: 1, duration: 0.3}, "<")
+      .fromTo(".t2-svg", { scale: 0 }, { scale: 1, duration: 0.3 }, "<")
       .fromTo(
         ".h2",
         {
@@ -258,7 +272,7 @@ export default function () {
             );
         },
       },
-      "-=6"
+      "-=10"
     );
   };
   return {
