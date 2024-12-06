@@ -7,11 +7,15 @@
     </div>
   </div>
   <div class="container">
-    <div class="box2">box2</div>
-    <div class="box3">box3</div>
-    <div class="box3">box4</div>
+    <div class="container2">
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+      <div class="box5">box5</div>
+    </div>
   </div>
-  <div class="box4"></div>
+
+  <div class="other">other</div>
 </template>
 
 <script setup lang="ts">
@@ -40,24 +44,34 @@ nextTick(() => {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .container {
-  width: 1000vw;
+  width: 400vw;
+  height: 160vh;
+  background-color: black;
+  position: relative;
+}
+.container2 {
+  width: 400vw;
   height: 100vh;
   display: flex;
 }
 .box2,
 .box3,
-.box4 {
+.box4,
+.box5,
+.other {
   width: 100vw;
   height: 100vh;
   color: #fffce1;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  border-bottom: 1px solid rgba(228, 228, 228, 0.5);
   font-size: 80px;
   text-align: center;
   line-height: 1000px;
-  background-color: rgb(145, 235, 157);
 }
-.box3 {
-  background-color: rgb(179, 216, 238);
+
+.startFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 </style>

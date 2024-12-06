@@ -23,7 +23,7 @@ import Main from "./components/Main.vue";
 }
 .main {
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 </style>
