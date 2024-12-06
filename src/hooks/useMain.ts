@@ -9,11 +9,11 @@ export default function () {
         trigger: ".container2",
         scrub: true,
         pin: ".container2",
-        start: "top top",
-        end: "+=100%",
+        start: "top top", //容器顶部触碰视口顶部触发
+        end: "+=100%", //滚动100%结束
       },
       onComplete: () => {
-        document.querySelector(".container2")?.classList.remove("startFixed");
+        document.querySelector(".container2")?.classList.remove("startFixed");//动画结束取消定位
         console.log("complete");
       },
       onReverseComplete: () => {
@@ -25,7 +25,7 @@ export default function () {
         console.log("start");
       },
     });
-    m1.fromTo(".container2", { x: 0 }, { x: "-300vw" });
+    m1.fromTo(".container2", { x: 0 }, { x: "-300vw" }); //动画
   };
 
   return {
