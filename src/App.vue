@@ -19,11 +19,11 @@ import Main from "./components/Main.vue";
   display: flex;
   flex-direction: column;
   padding: 200px;
-  border-bottom: 1px solid rgba(228, 228, 228, 0.5);;
+  border-bottom: 1px solid rgba(228, 228, 228, 0.5);
 }
 .main {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   min-height: 100vh;
 }
 </style>

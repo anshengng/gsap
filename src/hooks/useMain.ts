@@ -13,7 +13,7 @@ export default function () {
         end: "+=100%", //滚动100%结束
       },
       onComplete: () => {
-        document.querySelector(".container2")?.classList.remove("startFixed");//动画结束取消定位
+        document.querySelector(".container2")?.classList.remove("startFixed"); //动画结束取消定位
         console.log("complete");
       },
       onReverseComplete: () => {
@@ -27,7 +27,13 @@ export default function () {
     });
     m1.fromTo(".container2", { x: 0 }, { x: "-300vw" }); //动画
   };
-
+  // 页面刷新加载时确保清除已添加的 startFixed 类
+  window.addEventListener("load", () => {
+    const container = document.querySelector(".container2");
+    if (container) {
+      container.classList.remove("startFixed");
+    }
+  });
   return {
     initScroll,
   };
