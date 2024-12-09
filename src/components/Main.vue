@@ -23,7 +23,6 @@ import { nextTick } from "vue";
 import useMain from "../hooks/useMain";
 
 const { initScroll } = useMain();
-
 nextTick(() => {
   initScroll();
 });
@@ -45,7 +44,7 @@ nextTick(() => {
 }
 .container {
   width: 400vw;
-  height: 160vh;
+  height: 400vh;
   background-color: black;
   position: relative;
 }

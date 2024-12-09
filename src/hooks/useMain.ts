@@ -10,7 +10,7 @@ export default function () {
         scrub: true,
         pin: ".container2",
         start: "top top", //容器顶部触碰视口顶部触发
-        end: "+=100%", //滚动100%结束
+        end: "+=300%", //滚动100%结束
       },
       onComplete: () => {
         document.querySelector(".container2")?.classList.remove("startFixed"); //动画结束取消定位
