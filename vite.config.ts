@@ -9,4 +9,5 @@ export default defineConfig({
       dir: "22",
     }),
   ],
+  base: './'
 });
