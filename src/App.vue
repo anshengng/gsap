@@ -21,6 +21,11 @@ import Main from "./components/Main.vue";
   padding: 200px;
   border-bottom: 1px solid rgba(228, 228, 228, 0.5);
 }
+@media screen and (max-width: 768px) {
+  .title {
+    padding: 20px; /* 手机尺寸时设置 padding 为 0 */
+  }
+}
 .main {
   width: 100%;
   overflow: hidden;

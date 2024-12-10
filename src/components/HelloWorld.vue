@@ -278,4 +278,150 @@ nextTick(() => {
     transition: 0s;
   }
 }
+@media screen and (max-width: 768px) {
+  .container {
+    height: 150px;
+    .box-A,
+    .box-N,
+    .box-I,
+    .box-M,
+    .box-A-2,
+    .box-T,
+    .box-E {
+      width: 20px;
+      height: 80px;
+      text-align: center;
+      position: relative;
+      overflow: visible;
+      .a,
+      .n,
+      .i,
+      .m,
+      .a-2,
+      .t,
+      .t-1,
+      .e,
+      .e-00 {
+        font-size: 80px;
+        color: #fffce1;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      .mask {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 1;
+        overflow: visible;
+      }
+    }
+    .box-N {
+      width: 110px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding-top: 40px;
+    }
+    .box-A {
+      width: 100px;
+    }
+    .box-I {
+      overflow: hidden;
+      width: 50px;
+    }
+    .box-A-2 {
+      overflow: hidden;
+      width: 90px;
+    }
+    .box-M {
+      overflow: hidden;
+      width: 150px;
+    }
+    .box-T {
+      overflow: hidden;
+      width: 70px;
+    }
+    .box-E {
+      overflow: hidden;
+      width: 220px;
+      text-align: left;
+      padding-left: 6px;
+    }
+    .logo2 {
+      width: 110px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+    }
+    .logo2-2 {
+      position: absolute;
+      left: -120px;
+    }
+    .logo3 {
+      position: absolute;
+      left: -120px;
+    }
+    .logo-img2 {
+      transition: 0s;
+    }
+  }
+  .container-line2 {
+  justify-content: flex-end;
+  margin-top: 0;
+  padding-right: 100px;
+  .box-A2,
+  .box-N2,
+  .box-Y2,
+  .box-T2,
+  .box-H2,
+  .box-I2,
+  .box-N3,
+  .box-G2 {
+    width: 20px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    .a2,
+    .a2-2,
+    .n2,
+    .n2-2,
+    .y2,
+    .t2,
+    .h2,
+    .i2,
+    .n3,
+    .g2 {
+      font-size: 80px;
+      color: #fffce1;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+  }
+  .box-A2,
+  .box-N2 {
+    height: 90px;
+    overflow: hidden;
+  }
+  .box-Y2 {
+    width: 80px;
+  }
+  .box-T2 {
+    width: 76px;
+    height: 190px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+  .box-I2 {
+    width: 60px;
+  }
+  .box-N3,
+  .box-H2 {
+    overflow: hidden;
+  }
+}
+}
 </style>
